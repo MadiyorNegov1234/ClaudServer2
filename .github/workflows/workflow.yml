@@ -65,5 +65,5 @@ jobs:
           sudo docker pull madiyornegov/madiyor-aws:latest &&
           sudo docker stop my-app || true &&
           sudo docker rm my-app || true &&
-          sudo docker run -d --name my-app -p 8080:8080 ${{ secrets.DOCKER_USERNAME }}/madiyor-aws:latest
+          sudo docker run -d --name my-app -p 8080:8080 madiyornegov/madiyor-aws:latest
           "
